@@ -1,7 +1,7 @@
 main {
     background-color: #797979;
     height: 100vh;
-    padding: 180px 150px;
+    padding: 150px 50px;
 }
 
 /* TITLES OF SECTIONS */
@@ -11,7 +11,7 @@ h1 {
     font-size: 25px;
     text-align: center;
     color: #ffffff;
-    animation: float 2000ms ease-in-out infinite;
+    animation: float 2000ms linear infinite;
     transition: 1000ms;
 
 }
@@ -20,8 +20,15 @@ h1 {
     0%{
         transform: translateY(0px);
     }
+    
+    25%{
+        transform: translateY(5px);
+    }
     50%{
-        transform: translateY(-10px);
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(-5px);
     }
     100%{
         transform: translateY(0px);
@@ -52,16 +59,43 @@ h1:hover {
 
 .faq-section-container {
     grid-area: faq;
+    width: 100%;
 }
 
-.support-form-container {
+/* SUPPORT FORMS SECTION */
+
+.support-section-container {
     grid-area: support;
+    width: 100%;
 }
 
-.social-media-container {
+.support-forms-main-grid {
+    display: grid;
+    grid-template-columns: 30% 60%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px 15px;
+}
+
+.support-input-style-main {
+    padding: 10px;
+    background-color: rgba (255, 255, 255, 0.5);
+    color: black;
+    border: solid 1px solid black;
+}
+
+
+
+/* OTHER SECTIONS */
+
+.media-section-container {
     grid-area: media;
+    width: 100%;
 }
 
-.contacts-container {
+.contacts-section-container {
     grid-area: contacts;
+    width: 100%;
 }
+
+
+
