@@ -41,6 +41,7 @@ body a {
     left: 0;
     width: 100vw;
     height: fit-content;
+    z-index: 2;
 }
 
 .btns-container {
@@ -77,7 +78,7 @@ body a {
 }
 
 .logo-btn:hover {
-    color: #d29a4f;
+    color: #FFF36F;
     transition: 1000ms;
 }
 

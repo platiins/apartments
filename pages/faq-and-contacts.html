@@ -14,6 +14,19 @@
         rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
         crossorigin="anonymous"
     >
+<!-- FONT AWESOME ICONS -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+<!-- CSS ANIMATIONS -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="../css/styles.css" type="text/css">
     <link rel="stylesheet" href="../css/faq-and-contacts.css" type="text/css">
     <script src="./js/script.js" type="text/javascript"></script>
@@ -53,35 +66,155 @@
             <div class="faq-section-container">
                 <h1>- FAQ -</h1>
             </div>
-            <div class="support-section-container">
-                <h1>- SUPPORT -</h1>
-                <form action="" method="get" class="support-forms-main-grid mt-4">
+            <div class="callback-section-container">
+                <h1>- REQUEST A CALL-BACK -</h1>
+                <form 
+                    action="" 
+                    method="get" 
+                    class="mt-4 callback-forms-container"
+                    autocomplete=”off”
+                    >
+                <!-- FULL NAME -->
                     <label 
-                        for="fname"
-                        class="grid-area-label">First Name</label>
+                        for="full-name"
+                        class="label-display-none">
+                        FULL NAME
+                    </label>
                     <input 
+                        class="fname-input input-style-main"
                         type="text" 
-                        name="fname" 
+                        name="full-name" 
                         id="fname"
-                        class="support-input-style-main">
-                    <label 
-                        for="lname"
-                        class="grid-area-label">Last Name</label>
+                        required
+                        placeholder="FIRST NAME">
                     <input 
+                        class="lname-input input-style-main"
                         type="text" 
-                        name="lname" 
+                        name="full-name" 
                         id="lname"
-                        class="support-input-style-main">
+                        placeholder="LAST NAME">
+                <!-- EMAIL -->
                     <label 
-                        for="mname"
-                        class="grid-area-label">Middle Name</label>
+                        for="email" 
+                        class="label-display-none">
+                        EMAIL
+                    </label>
+                    <input 
+                        class="email-input input-style-main"
+                        type="email" 
+                        name="email" 
+                        id="email" 
+                        placeholder="EMAIL"
+                        required>
+                    <!-- PHONE// add coutry icons-->
+                    <label 
+                        for="phone-country-code"
+                        class="label-display-none">
+                        SELECT COUNTRY CODE
+                    </label>
+                    <select name="phone-country-code" id="phone-country-code" class="country-code-select input-style-main">
+                        <img class="phone-icon" src="../images/phone-solid.svg" alt="phone-icon">
+                        <option value="country-code-select" disabled selected>
+                        </option>
+                        <option value="latvia">+371</option>
+                        <option value="norway">+47</option>
+                        <option value="sweden">+46</option>
+                    </select>
+                    <label 
+                        for="phone-nr" 
+                        class="label-display-none">
+                        PHONE NUMBER
+                    </label>
                     <input 
                         type="text" 
-                        name="mname" 
-                        id="mname" 
-                        class="support-input-style-main">
+                        name="phone-nr" 
+                        id="phone-nr"
+                        placeholder="PHONE NUMBER"
+                        maxlength="8"
+                        minlength="8"
+                        class="phone-nr-input input-style-main" 
+                        required>
+                <!-- PREFERRED LANGUAGE -->
+                    <label class="pref-lang-p label-style-main">PREFERRED LANGUAGE:</label>
+                    <div class="pref-lang-eng">
+                        <input 
+                        class="me-2 radio-input"
+                        type="radio" 
+                        name="pref-lang" 
+                        id="eng" 
+                        value="English">
+                        <label for="eng">ENG</label>
+                    </div>
+                    <div class="pref-lang-lv">
+                        <input 
+                        class="me-2 radio-input"
+                        type="radio" 
+                        name="pref-lang" 
+                        id="lv" 
+                        value="Latvian">
+                    <label for="lv">LV</label>
+                    </div>
+                    <div class="pref-lang-no">
+                        <input 
+                        class="me-2 radio-input"
+                        type="radio" 
+                        name="pref-lang" 
+                        id="no" 
+                        value="Norwegian">
+                    <label for="no">NO</label>
+                    </div>
+                <!-- PREFERRED DATE -->
+                    <label 
+                        for="meet-date" 
+                        class="pref-date-label label-style-main">
+                        PREFERRED DATE:
+                    </label>
+                    <input
+                        class="calendar-input" 
+                        type="date" 
+                        id="meet-date" 
+                        name="meet-date">
+                <!-- NOTE -->
+                    <label 
+                        class="leave-note-label label-style-main"
+                        for="note">
+                        LEAVE A NOTE:
+                    </label>
+                    <input
+                        class="leave-note-input input-style-main"
+                        name="note" 
+                        id="note"
+                        placeholder="e.g call after 11am">
+                <!-- PRIVACY AGREEMENT -->
+                    <input 
+                        type="checkbox" 
+                        name="privacy-check" 
+                        id="privacy-check"
+                        class="privacy-check checkbox-style-main">
+                    <label 
+                        for="privacy-check"
+                        class="privacy-label label-style-main">
+                        <a href=""> I READ PRIVACY POLICY</a>
+                    </label>
+                <!-- 18+ -->
+                    <input 
+                        class="adult-check checkbox-style-main"
+                        type="checkbox" 
+                        name="adult-check" 
+                        id="adult-check"
+                        required
+                        >
+                    <label 
+                        for="adult-check"
+                        class="adult-label label-style-main">
+                        I AM LEGAL AGE
+                    </label>
+                    <button 
+                        type="submit"
+                        class="submit-callback-btn">
+                        SUBMIT
+                    </button>
                 </form>
-                </div>
             </div>
             <div class="media-section-container">
                 <h1>- SOCIAL MEDIA -</h1>
