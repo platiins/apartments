@@ -16,12 +16,6 @@
     font-weight: 700;
 }
 
-/* @font-face {
-    font-family: "Major Mono Display", monospace;
-    src: url(../assets/fonts/Major_Mono_Display/MajorMonoDisplay-Regular.ttf) format(truetype);
-    font-weight: 400;
-} */
-
 body {
     margin: 0;
     font-family: "Martian Mono", monospace;
