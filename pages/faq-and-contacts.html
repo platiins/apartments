@@ -64,15 +64,12 @@
     </header>
     <main id="faq-page-content">
       <div class="main-grid-container">
-        <div class="faq-section-container">
-          <h1>- FAQ -</h1>
-        </div>
-        <div class="callback-section-container">
+        <section class="callback-section-container">
           <h1>- REQUEST A CALL-BACK -</h1>
           <form
             action=""
             method="get"
-            class="mt-4 callback-forms-container"
+            class="callback-forms-container"
             autocomplete="”off”"
           >
             <!-- FULL NAME -->
@@ -142,7 +139,7 @@
             <label class="pref-lang-p label-style-main"
               >PREFERRED LANGUAGE:</label
             >
-            <div class="pref-lang-eng">
+            <div class="pref-lang-eng pref-lang-style">
               <input
                 class="me-2 radio-input"
                 type="radio"
@@ -152,7 +149,7 @@
               />
               <label for="eng">ENG</label>
             </div>
-            <div class="pref-lang-lv">
+            <div class="pref-lang-lv pref-lang-style">
               <input
                 class="me-2 radio-input"
                 type="radio"
@@ -162,7 +159,7 @@
               />
               <label for="lv">LV</label>
             </div>
-            <div class="pref-lang-no">
+            <div class="pref-lang-no pref-lang-style">
               <input
                 class="me-2 radio-input"
                 type="radio"
@@ -213,13 +210,44 @@
             </label>
             <button type="submit" class="submit-callback-btn">SUBMIT</button>
           </form>
-        </div>
-        <div class="media-section-container">
+        </section>
+        <section class="media-section-container">
           <h1>- SOCIAL MEDIA -</h1>
-        </div>
-        <div class="contacts-section-container">
+          <div class="sm-btns-container">
+            <!-- EMAIL -->
+            <button type="button" class="sm-btn email-btn">
+              <i
+                class="fa-solid fa-envelope sm-icon"
+                style="color: #ffffff"
+              ></i>
+              <a href="mailto:valerijaaivanovaa@gmail.com">EMAIL</a>
+            </button>
+            <!-- INSTAGRAM -->
+            <button type="button" class="sm-btn email-btn">
+              <i class="fa-solid fa-hashtag sm-icon" style="color: #ffffff"></i>
+              <a href="https://www.instagram.com/platiins/">INSTAGRAM</a>
+            </button>
+            <!-- GITHUB -->
+            <button type="button" class="sm-btn github-btn">
+              <i
+                class="fa-solid fa-code-compare sm-icon"
+                style="color: #ffffff"
+              ></i>
+              <a href="https://github.com/platiins">GITHUB</a>
+            </button>
+            <!-- LINKEDIN -->
+            <button type="button" class="sm-btn linkedin-btn">
+              <i
+                class="fa-brands fa-linkedin-in sm-icon"
+                style="color: #ffffff"
+              ></i>
+              <a href="https://www.linkedin.com/in/platiins/">LINKED IN</a>
+            </button>
+          </div>
+        </section>
+        <section class="contacts-section-container">
           <h1>- CONTACTS -</h1>
-        </div>
+        </section>
       </div>
     </main>
     <footer id="page-footer">
