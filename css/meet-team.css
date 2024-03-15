@@ -10,14 +10,75 @@ body {
   justify-content: center;
 }
 
+/* GRID */
+
 .players-cards-container {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 50px 50px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 3fr 1fr;
   margin: 200px 100px;
 }
+
+.player-one {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.player-two {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.player-three {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.title-sales {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.title-administration {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.title-design {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+/* TITLES OF DEPARTMENTS */
+
+.department-name {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  color: #000000;
+  animation: float 4000ms linear infinite;
+  z-index: 2;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+    color: rgba(0, 0, 0, 1);
+  }
+  25% {
+    transform: translateY(5px);
+    color: rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    transform: translateY(0px);
+    color: rgba(0, 0, 0, 0.7);
+  }
+  75% {
+    transform: translateY(-5px);
+    color: rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    transform: translateY(0px);
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+/* CARDS */
 
 .player-card {
   width: 400px;
