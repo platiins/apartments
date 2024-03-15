@@ -1,5 +1,77 @@
-#meet-team-content {
+body {
   background-color: #999797;
+}
+
+/* CARDS */
+
+.meet-team-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.players-cards-container {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin: 200px 100px;
+}
+
+.player-card {
+  width: 400px;
+  min-width: 400px;
+  height: 400px;
+  background-color: transparent;
+  perspective: 1000px;
+  position: relative;
+  perspective: 150rem;
+  box-shadow: none;
+  background: none;
+}
+
+.player-card__side {
+  width: 100%;
   height: 100%;
-  padding: 150px 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: all 0.8s ease;
+  background-color: #000000;
+  border: #000000 solid 10px;
+  box-shadow: 0 0 15px #000000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.front-side {
+  transition: transform 0.8s;
+}
+
+.card-front__img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  border-radius: 10px;
+}
+
+.back-side {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  transform: rotateY(-180deg);
+  transition: transform 0.8s;
+}
+
+.player-card:hover .front-side {
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+
+.player-card:hover .back-side {
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
 }
