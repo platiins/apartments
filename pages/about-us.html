@@ -15,6 +15,14 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- FONT AWESOME ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../css/styles.css" type="text/css" />
     <link rel="stylesheet" href="../css/about-us.css" type="text/css" />
     <script src="./js/script.js" type="text/javascript"></script>
@@ -51,11 +59,114 @@
     </header>
     <main id="about-us-content" class="about-us-content">
       <div class="about-grid-container">
-        <section class="about-section section-story">story</section>
-        <section class="about-section section-picture">oic</section>
-        <section class="about-section section-stats">stats</section>
-        <section class="about-section section-reviews">reviews</section>
-        <section class="about-section section-values">values</section>
+        <section class="about-section section-story">
+          <h2 class="about-section__h2">STORY</h2>
+          <article class="story-flex-container">
+            <p class="about-section__p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+              odio lorem, venenatis ac mattis vitae, luctus nec mi.
+            </p>
+            <p class="icon-style">
+              <i class="fa-solid fa-align-justify fa-lg"></i>
+            </p>
+            <p class="about-section__p">
+              Praesent eleifend iaculis urna, vel ornare tortor semper et. Donec
+              sit amet volutpat augue. Duis consequat, quam id aliquet molestie,
+              nunc ex cursus ligula.
+            </p>
+            <p class="icon-style">
+              <i class="fa-solid fa-align-justify fa-lg"></i>
+            </p>
+            <p class="about-section__p">
+              Vestibulum ullamcorper, felis quis tincidunt efficitur, lectus
+              libero bibendum metus, a ultricies ante nulla et risus. Donec et
+              mauris erat.
+            </p>
+          </article>
+        </section>
+        <section class="section-picture">
+          <img
+            src="../images/black-wall.webp"
+            alt="brick-wall"
+            class="section-picture__img"
+          />
+        </section>
+        <section class="about-section section-stats">
+          <div class="stats-numbers">
+            <p class="stats-numbers__value">3</p>
+            <p class="stats-numbers__value">4</p>
+            <p class="stats-numbers__value">15</p>
+            <p class="stats-numbers__value">120</p>
+            <p class="stats-numbers__value">300</p>
+            <p class="stats-numbers__value">150</p>
+          </div>
+          <div class="stats-words">
+            <p class="black-20px-700">COUNTRIES</p>
+            <p class="black-20px-700">CITIES</p>
+            <p class="black-20px-700">BUILDINGS</p>
+            <p class="black-20px-700">APARTMENTS</p>
+            <p class="black-20px-700">ROOMS</p>
+            <p class="black-20px-700">TENANTS</p>
+          </div>
+        </section>
+        <section class="about-section section-reviews">
+          <h2 class="about-section__h2 reviews-subtitle">REVIEWS</h2>
+          <div class="reviews-grid">
+            <div class="profile-img cust-1-img">
+              <i class="fa-solid fa-person-breastfeeding"></i>
+            </div>
+            <div class="comment-box cust-1_box">
+              <p class="comment-username cust-1-username">MARIA</p>
+              <p class="comment-content cust-1-comment">
+                "Safe, convenient, and stylish. Perfect for raising my family in
+                the city."
+              </p>
+            </div>
+            <div class="profile-img cust-2-img">
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <div class="comment-box cust-2_box">
+              <p class="comment-username cust-2-username">VIKTOR</p>
+              <p class="comment-content cust-2-comment">
+                "Efficient living at its finest. Ideal for balancing work and
+                relaxation."
+              </p>
+            </div>
+            <div class="profile-img cust-3-img">
+              <i class="fa-solid fa-user-astronaut"></i>
+            </div>
+            <div class="comment-box cust-3_box">
+              <p class="comment-username cust-3-username">ROBERT</p>
+              <p class="comment-content cust-3-comment">
+                "Feels like home, even after space. Earthly comforts meet
+                futuristic living."
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="about-section section-values">
+          <h2 class="about-section__h2">VALUES</h2>
+          <div class="section-values-flexbox">
+            <section>
+              <p class="icon-style">
+                <i class="fa-solid fa-leaf fa-lg"></i>
+              </p>
+              <h3 class="section-values__h3 black-20px-700">SUSTAINABILITY</h3>
+            </section>
+            <section>
+              <p class="icon-style">
+                <i class="fa-regular fa-comments fa-lg"></i>
+              </p>
+              <h3 class="section-values__h3 black-20px-700">COMMUNITY</h3>
+            </section>
+            <section>
+              <p class="icon-style">
+                <i class="fa-solid fa-solar-panel fa-lg"></i>
+              </p>
+              <h3 class="section-values__h3 black-20px-700">TECHNOLOGY</h3>
+            </section>
+          </div>
+        </section>
       </div>
     </main>
     <footer id="page-footer">
