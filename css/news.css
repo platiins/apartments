@@ -9,7 +9,7 @@
 .news-main-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 20% 25% 20% 20%;
+  grid-template-rows: 20% 25% 20% 25%;
   grid-template-areas:
     "news1-title news3-img news4-img newsletter"
     "news1-article news3-img news4-title newsletter"
@@ -70,26 +70,19 @@
   grid-area: podcasts;
 }
 
+.news-cell {
+  min-width: 200px;
+}
 /* STYLE */
 
 /* HELPER */
-
-.flex-col-end {
-  display: flex;
-  flex-flow: column;
-  justify-content: end;
-  align-items: end;
-  width: 100%;
-}
 
 .flex-col-spacebetween {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  width: 100%;
 }
 
-/* MAYBE CAN UNITE BOTH THESE */
 .article-style {
   text-align: justify;
   font-size: 0.8rem;
@@ -102,9 +95,6 @@
   margin-bottom: 0;
 }
 
-.read-more-icon {
-  padding: 5px;
-}
 .news-cell__img {
   object-fit: cover;
   width: 100%;
@@ -124,6 +114,50 @@
   margin-bottom: 0;
 }
 
-.news-cell {
-  min-width: 200px;
+.news-author {
+  margin: 0;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+/* MARGINS FOR ICONS */
+.news-icon__mr {
+  margin-right: 5px;
+}
+
+.news-icon__ml {
+  margin-left: 5px;
+}
+
+.podcasts-section__subtitle {
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding-bottom: 10px;
+}
+.podcasts-section__content {
+  border-bottom: 1px solid #fff36f;
+  border-top: 1px solid #fff36f;
+  padding: 15px 10px;
+}
+
+.podcasts-section__listen {
+  font-size: 1rem;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.listen__icon {
+  margin: 0px 20px;
+}
+
+.listen__icon:hover {
+  color: #fff36f;
+}
+
+.podcasts__date {
+  font-size: 0.6rem;
+  color: #fff36f;
+  margin: 25px 0 10px;
 }
